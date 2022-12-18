@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apklausos forma</title>
+    <style>
+        .a {
+            padding-top: 20px;
+        }
+
+        p {
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Jūsų informacija</legend>
+            <table>
+                <tr>
+                    <td><label for="vardas">Vardas:</label></td>
+                    <td><input type="text" id="vardas" name="vardas"></td>
+                </tr>
+                <tr>
+                    <td><label for="pavarde">Pavardė:</label></td>
+                    <td><input type="text" id="pavarde" name="pavarde"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Klausimai</legend>
+            <div>
+                <label for="apie_mus">Kaip sužinojote apie mus?</label>
+                <select id="apie_mus" name="apie_mus">
+                    <option value="google">Google</option>
+                    <option value="draugai">Iš draugų</option>
+                    <option value="kitas">Kitas</option>
+                </select>
+            </div>
+            <div class="a">
+                <label>Ar apsilankysite vėl?</label>
+            </div>
+            <div>
+                <label for="taip">Taip</label>
+                <input type="radio" id="taip" name="visit" value="taip">
+                <label for="ne">Ne</label>
+                <input type="radio" id="ne" name="visit" value="ne">
+                <label for="galbut">Galbūt</label>
+                <input type="radio" id="galbut" name="visit" value="galbut">
+            </div>
+            <div class="a">
+                <label for="apie_kursa">Ką manote apie kursą?</label>
+            </div>
+            <div>
+                <textarea id=apie_kursa name="apie_kursa" placeholder="Rašykite viską ką galvojate"
+                    style="width:700px; height: 200px;"></textarea>
+            </div>
+            <div>
+                <p>Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</p>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="csharp" name="csharp" value=""></td>
+                        <td><label for="csharp">C#</label></td>
+                        <td><input type="checkbox" id="java" name="java" value=""></td>
+                        <td><label for="java">JAVA</label></td>
+                        <td><input type="checkbox" id="php" name="php" value=""></td>
+                        <td><label for="php">PHP</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="html" name="html" value=""></td>
+                        <td><label for="html">HTML</label></td>
+                        <td><input type="checkbox" id="css" name="css" value=""></td>
+                        <td><label for="css">CSS</label></td>
+                        <td><input type="checkbox" id="javascript" name="javascript" value=""></td>
+                        <td><label for="javascript">JavaScript</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="python" name="python" value=""></td>
+                        <td><label for="python">Python</label></td>
+                        <td><input type="checkbox" id="ruby" name="ruby" value=""></td>
+                        <td><label for="ruby">Ruby</label></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="a">
+                <input type="submit" value="Siūsti">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
